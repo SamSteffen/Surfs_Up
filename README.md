@@ -64,4 +64,4 @@ From the above code, the following tables result:
 
 It would also be interesting to look at tourism information and see whether Oahu has more tourists visiting in the summer or winter months, as this information probably could impact the success of the business and might be a better indicator of projected success.
 
-- Additionally, to determine with certainty how or whether temperature impacts ice-cream sales, we could gather data on other similar businesses in places with temperature fluctuations to determine a "measure for success" marker--that is, an average temperature above which it would be safe to say that an ice-cream business could remain open all winter long.
+Additionally, to determine with certainty how or whether temperature impacts ice-cream sales, we could gather data on other similar businesses in places with temperature fluctuations to determine a "measure for success" marker--that is, an average temperature above which it would be safe to say that an ice-cream business could remain open all winter long.
