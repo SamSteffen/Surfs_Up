@@ -31,10 +31,10 @@ While it has not been stated explicitly what average temperature should be used 
 
 To determine additional queries that we could perform on the dataset, we can review what data is available to us in the "measurement" class, by running the following:
 
-    ```
+```
     results = session.query(Measurement)
     print(results)
-    ```
+```
 
 This shows that contained in the measurement class are: ID, station, date, precipitation and temperature measurements. Knowing this, we can determine other queries to run on the datasets for the months of June and December. For instance, we could determine the average precipitation for the month of June by running the following script:
     
@@ -59,8 +59,8 @@ From the above code, the following tables result:
 
 <img width="113" alt="June_precip" src="https://user-images.githubusercontent.com/104729703/182048813-5f18e7d5-aa7b-4865-a115-bfafc3317e50.png">  <img width="132" alt="December_precip" src="https://user-images.githubusercontent.com/104729703/182048828-bb685afd-eda6-44c9-9583-76e7a8c9490a.png">
 
-- A comparison of the above shows that the average rainfall in June is 0.13 inches and less than 4.43 inches at the maximum recording. 
-- For December, average rainfall is 0.21 inches and less than 6.4 inches at the maximum recording.
+- A comparison of the above shows that the average rainfall in June is 0.13 inches and 4.43 inches at the maximum recording. 
+- For December, average rainfall is 0.21 inches and 6.4 inches at the maximum recording.
 
 It would also be interesting to look at tourism information and see whether Oahu has more tourists visiting in the summer or winter months, as this information probably could impact the success of the business and might be a better indicator of projected success.
 
