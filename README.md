@@ -27,7 +27,7 @@ By comparing the data in the two tables above, we can see that:
 ## Summary
 It's worth mentioning at the outset that the sizes of the two datasets for the above analysis are not the same; the June data was the result of 1,700 data points and the December data contains 1,517 data points. In spite of this, the two datasets still represent a robust set for a 30-day month (June) and a 31-day month (December) at opposite seasons of the year. 
 While it has not been stated explicitly what average temperature should be used to measure whether people will want to surf and have ice cream year-round, the above analysis of Oahu temperature data for the months of June 2010-2017 and December 2010-2016 shows the following:
-- Becuase there is roughly 4 degrees difference in the average temperature of June versus December, it is likely that temperature will not affect the success or failure of the business.
+- Because there is roughly 4 degrees difference in the average temperature of June versus December, it is likely that Oahu temperature will have little affect on the success or failure of the business.
 
 To determine additional queries that we could perform on the dataset, we can review what data is available to us in the "measurement" class, by running the following:
 
