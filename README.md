@@ -28,14 +28,15 @@ By comparing the data in the two tables above, we can see that:
 It's worth mentioning at the outset that the sizes of the two datasets for the above analysis are not the same; the June data was the result of 1,700 data points and the December data contains 1,517 data points. In spite of this, the two datasets still represent a robust set for a 30-day month (June) and a 31-day month (December) at opposite seasons of the year. 
 While it has not been stated explicitly what average temperature should be used to measure whether people will want to surf and have ice cream year-round, the above analysis of Oahu temperature data for the months of June 2010-2017 and December 2010-2016 shows the following:
 - Becuase there is roughly 4 degrees difference in the average temperature of June versus December, it is likely that temperature will not affect the success or failure of the business.
-- To determine additional queries that we could perform on the dataset, we can review what data is available to us in the "measurement" class, by running the following:
+
+To determine additional queries that we could perform on the dataset, we can review what data is available to us in the "measurement" class, by running the following:
 
     ```
     results = session.query(Measurement)
     print(results)
     ```
 
-This shows that contained in the measurement class are: ID, station, date, precipitation and temperature measurements. Knowing this, we can determine other queries to run on the datasets for the months of June and December. We could determine the average precipitation for the month of June by running the following script:
+This shows that contained in the measurement class are: ID, station, date, precipitation and temperature measurements. Knowing this, we can determine other queries to run on the datasets for the months of June and December. For instance, we could determine the average precipitation for the month of June by running the following script:
     
 ```
     results = session.query(Measurement.date, Measurement.prcp).\
@@ -54,12 +55,13 @@ We could then refactor this code to determine the average precipitation for the 
     Dec_precip_df.describe()
 ```
 
-- From the above code, the following tables result:
+From the above code, the following tables result:
 
 <img width="113" alt="June_precip" src="https://user-images.githubusercontent.com/104729703/182048813-5f18e7d5-aa7b-4865-a115-bfafc3317e50.png">  <img width="132" alt="December_precip" src="https://user-images.githubusercontent.com/104729703/182048828-bb685afd-eda6-44c9-9583-76e7a8c9490a.png">
 
-- A comparison of the above shows that the average rainfall in June is 0.13 inches and less than 4.43 inches at the maximum recording. For December, average rainfall is 0.21 inches and less than 6.4 inches at the maximum recording.
+- A comparison of the above shows that the average rainfall in June is 0.13 inches and less than 4.43 inches at the maximum recording. 
+- For December, average rainfall is 0.21 inches and less than 6.4 inches at the maximum recording.
 
-- It would also be interesting to look at tourism information and see whether Oahu has more tourists visiting in the summer or winter months, as this information probably could impact the success of the business and might be a better indicator.
+It would also be interesting to look at tourism information and see whether Oahu has more tourists visiting in the summer or winter months, as this information probably could impact the success of the business and might be a better indicator of projected success.
 
 - Additionally, to determine with certainty how or whether temperature impacts ice-cream sales, we could gather data on other similar businesses in places with temperature fluctuations to determine a "measure for success" marker--that is, an average temperature above which it would be safe to say that an ice-cream business could remain open all winter long.
